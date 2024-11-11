@@ -1,0 +1,558 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+li, a, button{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: black;
+  text-decoration: none;
+}
+/* Navbar/Sidebar styling starts here */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 10%;
+  background-color: black;
+  border-radius: 50px;
+  height: 0px;
+  margin-top: 50px;
+  margin-left: 150px;
+  margin-right: 150px;
+}
+
+header .logo-div{
+  height: 50px;
+  width: 50px;
+  background-color: rgb(255, 136, 0);
+  border-radius: 50%;
+  margin-left: -140px;
+}
+
+header .logo-div img{
+  height: 25px;
+  margin-left: 13px;
+  margin-top: 12px;
+}
+
+.sidebar{
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 250px;
+  z-index: 999;
+  background-color: hsl(0, 2%, 13%);
+  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.sidebar li{
+  width: 100%;
+}
+
+.sidebar a{
+  width: 100%;
+}
+
+@media(max-width: 800px){
+  .hideOnMobile{
+    display: none;
+  }
+}
+
+header nav ul{
+  list-style: none;
+}
+
+header nav ul li{
+  display: inline-block;
+  padding: 0px 30px;
+}
+
+header nav ul li a {
+  transition: all 0.3s ease 0s;
+  color: #ffff;
+}
+
+header nav ul li a:hover {
+  color: rgb(255, 136, 0);
+}
+
+button {
+  padding: 9px 25px;
+  background-color: rgb(255, 136, 0);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  margin-right: -8rem;
+}
+
+
+#main {
+  margin-left: 150px;
+  margin-right: 150px;
+  margin-top: 50px;
+}
+
+
+#main .mainbody{
+ display: flex;
+ column-gap: 5rem;
+}
+
+#main .mainbody .left{
+  width: 50rem;
+  padding-top: 2rem;
+}
+
+#main .mainbody .left p{
+  padding-top: 1rem;
+}
+
+#main .mainbody .left h1{
+  padding-top: 2rem;
+  font-size: 30px;
+}
+
+#main .mainbody .left span{
+  color: rgb(255, 136, 0);
+}
+
+#main .mainbody .left .store{
+  display: flex;
+  gap: 2rem;
+}
+
+#main .mainbody .left .store .google_store{
+  margin-top: 2rem;
+  height: 3rem;
+  width: 12rem;
+  background-color: #000;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#main .mainbody .left .store .google_store img{
+  height: 40px;
+  width: 40px;
+  margin-top: 4px;
+  margin-left: 20px;
+}
+
+#main .mainbody .left .store .google_store .google_store_text{
+  font-size: 15px;
+  margin-left: 80px;
+  margin-top: -40px;
+  color: #ffff;
+}
+
+#main .mainbody .left .store .app_store{
+  margin-top: 2rem;
+  height: 3rem;
+  width: 12rem;
+  background-color: #000;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#main .mainbody .left .store .app_store img{
+  height: 40px;
+  width: 40px;
+  margin-top: 3px;
+  margin-left: 20px;
+}
+
+#main .mainbody .left .store .app_store .app_store_text{
+  font-size: 15px;
+  margin-left: 80px;
+  margin-top: -40px;
+  color: #ffff;
+}
+
+#main .mainbody .left .threeimage {
+  margin-top: 3rem;
+  display: flex;
+}
+
+#main .mainbody .left .threeimage img{
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+
+#main .mainbody .left .milliontext{
+  margin-left: 11rem;
+  margin-top: -2.8rem;
+}
+
+#main .mainbody .left .milliontext h6{
+  margin-top: 6px;
+}
+
+#main .mainbody .right{
+ 
+}
+
+
+#main .mainbody .right img{
+  height: 420px;
+  width: 550px;
+  z-index: 999;
+}
+
+#main .info {
+  background-color: hsl(0, 2%, 13%);
+  color: #ffff;
+  border-radius: 5px;
+  margin-top: -1rem;
+  height: 16rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+#main .info .info-text{
+  padding-top: 30px;
+  margin-left: 30px;
+}
+
+#main .info .info-text span{
+  color: rgb(255, 136, 0);
+}
+
+#main .info .info-text p{
+  padding-top: 30px;
+}
+
+#main .info .info-text .qrcode{
+  margin-left: 18rem;
+  margin-top: -3rem;
+}
+
+#main .info .info-text .qrcode img{
+  height: 50px;
+  width: 50px;
+  border-radius: 5px;
+}
+
+#main .info .info-text h2{
+  margin-left: 23rem;
+  margin-top: -2.5rem;
+  font-size: 15px;
+}
+
+#main .info .info-text .bottom-left-text{
+  display: flex;
+  column-gap: 4rem;
+  padding-top: 4rem;
+  font-size: 15px;
+}
+
+#main .info .info-text .bottom-left-text .vertical-line{
+  background-color: #ffff;
+  width: 1px;
+  height: inherit;
+}
+
+#main .info .for-ios {
+  margin-left: 45rem;
+  margin-top: -12rem;
+  background-color: #ffff;
+  color: #000;
+  height: 200px;
+  width: 200px;
+  border-radius: 5px;
+}
+
+#main .info .for-ios h4{
+  margin-left: 10px;
+  padding-top: 10px;
+}
+
+#main .info .for-ios h6{
+  margin-left: 10px;
+  padding-top: 5px;
+}
+
+#main .info .for-ios button{
+  margin-left: 10px;
+  margin-top: 15px;
+  border-radius: 5px;
+}
+
+
+#main .info .for-ios .qrcode-div img {
+  height: 70px;
+  width: 70px;
+  margin-left: 10px;
+  margin-top: 20px;
+}
+
+
+#main .info .for-ios .applelogo-div {
+  background-color: hsl(0, 2%, 13%);
+  border-radius: 50%;
+  margin-left: 150px;
+  margin-top: -47px;
+  height: 70px;
+  width: 70px;
+}
+
+#main .info .for-ios .applelogo-div img {
+  height: 40px;
+  width: 40px;
+  margin-left: 12px;
+  margin-top: 10px;
+}
+
+#main .info .for-android {
+  margin-left: 60rem;
+  margin-top: -12.5rem;
+  background-color: #ffff;
+  color: #000;
+  height: 200px;
+  width: 200px;
+  border-radius: 5px;
+}
+
+#main .info .for-android h4{
+  margin-left: 10px;
+  padding-top: 10px;
+}
+
+#main .info .for-android h6{
+  margin-left: 10px;
+  padding-top: 5px;
+}
+
+#main .info .for-android button{
+  margin-left: 10px;
+  margin-top: 15px;
+  border-radius: 5px;
+}
+
+
+#main .info .for-android .qrcode-div img {
+  height: 70px;
+  width: 70px;
+  margin-left: 10px;
+  margin-top: 20px;
+}
+
+
+#main .info .for-android .applelogo-div {
+  background-color: hsl(0, 2%, 13%);
+  border-radius: 50%;
+  margin-left: 150px;
+  margin-top: -47px;
+  height: 70px;
+  width: 70px;
+}
+
+#main .info .for-android .applelogo-div img {
+  height: 40px;
+  width: 40px;
+  margin-left: 12px;
+  margin-top: 10px;
+}
+
+
+/* 
+  ##Device = Desktops  ##Screen = 1281px to higher resolution desktops
+*/
+@media (min-width: 1281px) {
+  /* CSS */
+}
+
+/* 
+  ##Device = Laptops, Desktops  ##Screen = B/w 1025px to 1280px
+*/
+@media (min-width: 1025px) and (max-width: 1280px) {
+  
+  /* CSS */
+  
+}
+
+/* 
+  ##Device = Tablets, Ipads (portrait)  ##Screen = B/w 768px to 1024px
+*/
+@media (min-width: 768px) and (max-width: 1024px) {
+  
+  /* CSS */
+  
+}
+
+/* 
+  ##Device = Tablets, Ipads (landscape)  ##Screen = B/w 768px to 1024px
+*/
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  
+  /* CSS */
+  
+}
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+ ##Screen = B/w 481px to 767px
+*/
+@media (min-width: 481px) and (max-width: 767px) {
+  
+  /* CSS */
+  
+}
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+@media (min-width: 320px) and (max-width: 480px) {
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    background-color: black;
+    border-radius: 50px;
+    height: 0px;
+    margin-top: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  header nav ul li{
+    display: inline-block;
+    padding: 9px 50px;
+  }
+
+  
+  button {
+    padding: 9px 10px;
+    background-color: rgb(255, 136, 0);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    margin-left: 2rem;
+    margin-top: 2rem;
+  }
+
+  #main {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+  }
+
+  #main .mainbody{
+    display: flex;
+    flex-direction: column;
+    column-gap: 5rem;
+   }
+
+   #main .mainbody .left{
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+  }
+
+  #main .mainbody .right img{
+    height: 300px;
+    width: 300px;
+    z-index: 999;
+  }
+
+  #main .info {
+    background-color: hsl(0, 2%, 13%);
+    color: #ffff;
+    border-radius: 5px;
+    margin-top: -1rem;
+    height: 60rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  #main .info .info-text{
+    padding-top: 20px;
+    margin-left: 20px;
+  }
+
+  #main .info .info-text p{
+    padding-top: 10px;
+  }
+
+  #main .info .info-text h2{
+    margin-left: 23rem;
+    margin-top: -2.5rem;
+    font-size: 10px;
+  }
+
+  #main .info .info-text .bottom-left-text{
+    display: flex;
+    column-gap: 1rem;
+    padding-top: 2rem;
+    font-size: 10px;
+  }
+
+  #main .info .for-ios {
+    margin-left: 1rem;
+    margin-top: 1rem;
+    background-color: #ffff;
+    color: #000;
+    height: 180px;
+    width: 150px;
+    border-radius: 5px;
+  }
+  
+  #main .info .for-ios h4{
+    margin-left: 10px;
+    padding-top: 10px;
+  }
+  
+  #main .info .for-ios h6{
+    margin-left: 10px;
+    padding-top: 5px;
+  }
+  
+  #main .info .for-ios button{
+    margin-left: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+  }
+  
+  
+  #main .info .for-ios .qrcode-div img {
+    height: 50px;
+    width: 50px;
+    margin-left: 10px;
+    margin-top: 10px;
+  }
+
+  
+#main .info .for-ios .applelogo-div {
+  background-color: hsl(0, 2%, 13%);
+  border-radius: 50%;
+  margin-left: 110px;
+  margin-top: -20px;
+  height: 50px;
+  width: 50px;
+}
+
+#main .info .for-ios .applelogo-div img {
+  height: 30px;
+  width: 30px;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+  
+}

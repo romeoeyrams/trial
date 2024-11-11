@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>trial</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    
+    <!-- Navbar starts here -->
+     <header>
+      <div class="logo-div">
+         <img class="logo" src="./Assets/Images/book.png" alt="logo">
+      </div>
+      <nav>
+        <ul class="sidebar">
+          <a onclick=hideSidebar() href="#"><img src="./Assets/Images/close-icon.png" alt="" height="24" width="24"></a>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Features</a></li>
+          <li><a href="#">How It works</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Blog</a></li>
+          <a class="cta" href="#"><button>Get the App</button></a>
+        </ul>
+        <ul>
+          <li class="hideOnMobile"><a href="#">Home</a></li>
+          <li class="hideOnMobile"><a href="#">Features</a></li>
+          <li class="hideOnMobile"><a href="#">How It works</a></li>
+          <li class="hideOnMobile"><a href="#">About Us</a></li>
+          <li class="hideOnMobile"><a href="#">Blog</a></li>
+        </ul>
+      </nav>
+      <a class="cta" href="#"><button class="hideOnMobile">Get the App</button></a>
+      <a onclick=showSidebar() href="#"><img src="./Assets/Images/menu-icon.png" alt="" height="24" width="24"></a>
+     </header>
+
+     <section id="main">
+     <div class="mainbody">
+      <div class="left">
+        <p>Supreme Ebook and Audiobook Platform</p>
+        <h1>Your Ultimate <span>EBook<br>
+        & Audiobook</span> App</h1>
+
+        <div class="store">
+          <div class="google_store">
+            <img src="./Assets/Images/googlestore.png" alt="">
+            <div class="google_store_text">
+            <h6>GET IT ON</h6>
+            <h4>Google Play</h4>
+            </div>
+          </div>
+
+          <div class="app_store">
+            <img src="./Assets//Images/applelogo.png" alt="">
+            <div class="app_store_text">
+              <h6>Download on the</h6>
+              <h4>App Store</h4>
+              </div>
+          </div>
+        </div>
+
+        <div class="threeimage">
+            <img src="./Assets/Images/lady.jpg" alt="lady1">
+            <img src="./Assets/Images/lady2.jpg" alt="lady2">
+            <img src="./Assets/Images/lady.jpg" alt="lady1">
+        </div>
+
+        <div class="milliontext">
+          <h3>5 Million +</h3>
+          <h6>World Active Users</h6>
+        </div>
+      </div>
+
+      <div class="right">
+        <img src="./Assets/Images/main-img.png" alt="mainimg">
+      </div>
+     </div>
+
+     <div class="info">
+      <div class="info-text">
+        <h3>Download <span>Our Ebook</span></h3>
+        <h3>Mobile App Now</h3>
+
+        <p>Learn new things everyday,<br>
+          make notes and save your favorite
+        </p>
+
+        <div class="qrcode">
+          <img src="./Assets/Images/qrcode.png" alt="qrcode">
+        </div>
+        <h2>Scan Here</h2>
+
+        <div class="bottom-left-text">
+          <h3><span>5 Million +</span><br>
+            World Active Users
+          </h3>
+
+            <div class="vertical-line"></div>
+
+          <h3><span>8000+</span><br>
+            Books
+          </h3>
+          
+            <div class="vertical-line"></div>
+
+          <h3><span>500+</span><br>
+            Authors
+          </h3>
+        </div>
+      </div>
+
+      <div class="for-ios">
+        <h4>For iOS</h4>
+        <h6>iOS 15.6+</h6>
+
+        <button type="button">Download App</button>
+        <div class="qrcode-div">
+           <img src="./Assets/Images/qrcode.png" alt="qrcode" class="qrcode-ios">
+        </div>
+        <div class="applelogo-div">
+          <img src="./Assets//Images/applelogo.png" alt="" class="applelogo-android">
+        </div>
+      </div>
+
+
+      <div class="for-android">
+        <h4>For Android</h4>
+        <h6>Android 80+</h6>
+
+        <button type="button">Download App</button>
+        <div class="qrcode-div">
+           <img src="./Assets/Images/qrcode.png" alt="qrcode" class="qrcode-ios">
+        </div>
+        <div class="applelogo-div">
+          <img src="./Assets//Images/android-logo.png" alt="" class="applelogo-android">
+        </div>
+      </div>
+
+     </div>
+    </section>
+
+  
+    <script src="./script.js"></script>
+  </body>
+</html>
